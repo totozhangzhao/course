@@ -1,16 +1,59 @@
-const path = require('path');
-
 module.exports = {
-	context: path.join(__dirname, './src'),
-	entry: {
-		'index': './index.js',
-		'lib': './lib.js'
-	},
+	entry: './src/split-a.js',
 	output: {
-		filename: '[name].js'
+		filename: 'split-a.js',
+		publicPath: '/dist/'
 	},
-	mode: 'development',
-	devServer: {
-		publicPath: '/dist'
-	}
+	// optimization: {
+	// 	splitChunks: {
+	// 		chunks: 'all'
+	// 	}
+	// },
+	// module: {
+	// 	rules: [
+	// 		{
+	// 			test: /\.css$/,
+	// 			use: [
+	// 				'style-loader',
+	// 				'css-loader',
+	// 				'postcss-loader'
+	// 			]
+	// 		}
+	// 		// {
+	// 		// 	test: /\.scss$/,
+	// 		// 	use: [
+	// 		// 		'style-loader',
+	// 		// 		{
+	// 		// 			loader: 'css-loader',
+	// 		// 			options: {
+	// 		// 				sourceMap: true
+	// 		// 			}
+	// 		// 		}, {
+	// 		// 			loader: 'sass-loader',
+	// 		// 			options: {
+	// 		// 				sourceMap: true
+	// 		// 			}
+	// 		// 		}
+	// 		// 	]
+	// 		// }
+	// 		// {
+	// 		// 	test: /\.less$/,
+	// 		// 	use: [
+	// 		// 		'style-loader',
+	// 		// 		{
+	// 		// 			loader: 'css-loader',
+	// 		// 			options: {
+	// 		// 				sourceMap: true
+	// 		// 			}
+	// 		// 		}, {
+	// 		// 			loader: 'less-loader',
+	// 		// 			options: {
+	// 		// 				sourceMap: true
+	// 		// 			}
+	// 		// 		}
+	// 		// 	]
+	// 		// }
+	// 	]
+	// },
+	mode: 'development'
 };

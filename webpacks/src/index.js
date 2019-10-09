@@ -1,5 +1,9 @@
-import calculator from './calculator';
+// import calculator from './calculator';
 
-let num = calculator.add(1, 3);
+// let num = calculator.add(1, 3);
 
-console.log(num);
+// console.log(num);
+// 
+// import './style.scss';
+
+import './style.css';

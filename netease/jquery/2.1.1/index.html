@@ -8,11 +8,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
   <title></title>
-  <script src="./dist/main.js"></script>
+  <script src="./jquery.js"></script>
+  <script>
+  	var obj = $.extend(true, {}, {a: 1, list: {b: 2}}, {list: {c: 3}});
+    console.log(obj);
+  </script>
 </head>
 
 <body>
-  <div id="app"></div>
+	<div class="box"></div>
 </body>
 
 </html>

@@ -8,11 +8,27 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
   <title></title>
-  <script src="./dist/main.js"></script>
 </head>
 
 <body>
-  <div id="app"></div>
+	<div class="box"></div>
+  <script src="./Underscore.js"></script>
+  <script>
+    var cbs = _.callbacks();
+
+    cbs.add(function () {
+      console.log(1);
+    });
+
+    cbs.fire();
+
+
+    // var cbs1 = _.callbacks('once');
+    // cbs1.add(function () {
+    //   console.log(2);
+    // });
+    // cbs1.fire();
+  </script>
 </body>
 
 </html>

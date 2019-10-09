@@ -8,11 +8,21 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
   <title></title>
-  <script src="./dist/main.js"></script>
 </head>
 
 <body>
-  <div id="app"></div>
+	<script src="./underscore.js"></script>
+	<script>
+		// console.log(_([1, 2, 3]));
+		// console.log(_.unique([1,2,2,2,3,4,5,6,'A', 'b'], function (value) {
+		// 	return typeof(value) === 'string' ? value.toLowerCase() : value;
+		// }));
+
+		_.each({a: 1, b: 2}, function (value, index) {
+			console.log('value: ' + value);
+			console.log('index: ' + index);
+		});
+	</script>
 </body>
 
 </html>
